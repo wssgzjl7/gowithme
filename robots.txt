@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wssgzjl7.github.io/gowithme/sitemap.xml
