@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="GoWithMe地陪平台提供西班牙专业中文向导服务，深度体验马德里和巴塞罗那的文化与美食">
+  <title>GoWithMe 地陪平台 - 西班牙中文向导服务</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #007BFF, #00BFFF);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      border-radius: 20px;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 3rem 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #007BFF;
+      font-size: 2rem;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, #007BFF, #00BFFF);
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+    .card-body {
+      padding: 1.5rem;
+    }
+    .card h3 {
+      color: #007BFF;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+    footer {
+      background: linear-gradient(135deg, #007BFF, #00BFFF);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    .contact-info {
+      background: white;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .contact-info p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    .contact-info strong {
+      color: #007BFF;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.75rem;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-info {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GoWithMe 地陪平台</h1>
+    <p>精选中文向导带你深度玩转西班牙</p>
+    <nav>
+      <a href="#madrid">马德里</a>
+      <a href="#barcelona">巴塞罗那</a>
+      <a href="#guides">地陪推荐</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="madrid">
+      <h2>马德里景点与美食</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://img95.699pic.com/photo/50098/2948.jpg_wh860.jpg" loading="lazy" alt="马德里皇宫壮观的外立面，展示其巴洛克建筑风格">
+          <div class="card-body">
+            <h3>马德里皇宫</h3>
+            <p>欧洲第三大皇宫，拥有3418个房间，是西班牙王室的官方住所（现主要用于国事活动）。建议参观国王厅、镜厅和皇家药房。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://todososcaminhos.com/wp-content/uploads/2021/04/20181114_140659-scaled.jpg" loading="lazy" alt="San Ginés油条店内部传统装饰与顾客享用油条场景">
+          <div class="card-body">
+            <h3>San Ginés 油条店</h3>
+            <p>1894年开业的老字号，24小时营业。推荐点一份"Porción"油条配"Chocolate Caliente"热巧克力，体验马德里人最爱的早餐组合。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i0.wp.com/www.viaggiallafinedelmondo.it/wp-content/uploads/2019/01/galleria-centrale-del-museo-del-prado.jpg?w=2250&ssl=1" loading="lazy" alt="普拉多博物馆新古典主义风格的主入口建筑">
+          <div class="card-body">
+            <h3>普拉多博物馆</h3>
+            <p>必看镇馆之宝：委拉斯开兹《宫娥》、戈雅《裸体的马哈》、博斯《人间乐园》。建议购买"艺术大道"联票可同时参观提森和索菲亚王后中心。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_958/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/gfn6rkivq54m0phslmen/RetiroParkandCibelesPalaceWalkingTourinMadrid.jpg" loading="lazy" alt="丽池公园人工湖上游客划船欣赏周围景观">
+          <div class="card-body">
+            <h3>丽池公园</h3>
+            <p>主要景点：水晶宫（Palacio de Cristal）、玫瑰园（La Rosaleda）、堕落天使雕像。周末常有街头表演，划船费用：45分钟/8欧元。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="barcelona">
+      <h2>巴塞罗那景点与美食</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/R.030af98436366151b5c48bb137ebe5a0?rik=ierJXkHjoBMTDQ&riu=http%3a%2f%2fwww.atterrir.com%2fwp-content%2fuploads%2f2015%2f03%2fSagrada_Familia_Fa%c3%a7ana_del_Naixement.jpg&ehk=h3DxcHsC0kct9NZglE8kOJMyhj5mhVr2ezy3YrzGT1s%3d&risl=&pid=ImgRaw&r=0" loading="lazy" alt="圣家堂高耸入云的独特建筑外观全景">
+          <div class="card-body">
+            <h3>圣家堂</h3>
+            <p>建议提前2周官网购票（基本票26欧元），必看：受难立面、诞生立面、中央塔楼（电梯+步行）。最佳拍摄时间：早上9点前。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://d3e1m60ptf1oym.cloudfront.net/f826d548-91dd-4153-9b16-a152485cd74d/F56493-FR-01_uxga.jpg" loading="lazy" alt="传统西班牙海鲜饭特写，展示丰富海鲜食材">
+          <div class="card-body">
+            <h3>海鲜饭</h3>
+            <p>正宗餐厅推荐：7 Portes（百年老店）、Can Solé（家庭经营）、Arrosseria Gòtic。注意：传统海鲜饭需2人起点，等待时间约40分钟。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/b3/92/77/b392776a2b13ab9ee22f7528722589c3.jpg" loading="lazy" alt="巴特罗之家色彩斑斓的波浪形外立面细节">
+          <div class="card-body">
+            <h3>巴特罗之家</h3>
+            <p>门票建议选择"Blue"套票（含AR导览器），亮点：龙脊屋顶、海洋中庭、蘑菇壁炉。夜间参观有特别灯光秀（需额外购票）。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://th.bing.com/th/id/R.3b740e4d51db96903535e6488b9ddea5?rik=5l5lUvxN50VVyA&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180113%2f2dd35ca52beb45e194dd07e3e6846a48.jpeg&ehk=%2fyo4G2YfEleBDyyftQHzegO6ZE8CPLhrqV%2fRkV74Dtk%3d&risl=&pid=ImgRaw&r=0" loading="lazy" alt="古埃尔公园著名的马赛克长椅与城市景观">
+          <div class="card-body">
+            <h3>古埃尔公园</h3>
+            <p>核心区需门票（10欧元），免费区同样精彩。最佳路线：从正门进入→蜥蜴喷泉→百柱厅→希腊剧场。建议傍晚前往欣赏日落。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://youimg1.c-ctrip.com/target/100n0x000000l8r1wC8F1.jpg" loading="lazy" alt="兰布拉大道繁华的步行街与街头艺人表演">
+          <div class="card-body">
+            <h3>兰布拉大道</h3>
+            <p>沿途亮点：博盖利亚市场（8:00-20:30）、利塞乌大剧院、皇家广场。注意保管财物，推荐品尝市场内的鲜榨果汁和伊比利亚火腿。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides">
+      <h2>精选地陪</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" loading="lazy" alt="李明导游专业形象照">
+          <div class="card-body">
+            <h3>李明（马德里）</h3>
+            <p><strong>服务内容：</strong><br>
+            - 私人定制路线（艺术/美食/购物）<br>
+            - 免排队门票预订<br>
+            - 在地餐厅预订<br>
+            - 专业单反跟拍服务</p>
+            <p><strong>费用：</strong> 80欧元/4小时起</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" loading="lazy" alt="王娜导游微笑服务照片">
+          <div class="card-body">
+            <h3>王娜（巴塞罗那）</h3>
+            <p><strong>特色服务：</strong><br>
+            - 高迪建筑深度讲解<br>
+            - 小众拍摄点推荐<br>
+            - 加泰罗尼亚文化体验<br>
+            - 海滩日落之旅</p>
+            <p><strong>费用：</strong> 90欧元/4小时起</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" loading="lazy" alt="张伟导游工作场景照片">
+          <div class="card-body">
+            <h3>张伟（双城导览）</h3>
+            <p><strong>套餐服务：</strong><br>
+            - 马德里+巴塞罗那5日深度游<br>
+            - 高铁票代订<br>
+            - 特色公寓推荐<br>
+            - 全程中文陪同</p>
+            <p><strong>费用：</strong> 600欧元/5天</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>联系我们</h2>
+      <address class="contact-info">
+        <p><strong>预订流程：</strong><br>
+        1. 微信咨询可用日期<br>
+        2. 确认行程细节<br>
+        3. 支付30%定金<br>
+        4. 收到确认邮件<br>
+        5. 当天现场支付尾款</p>
+        <p>微信：<strong>gowithme_spain</strong>（扫码添加）</p>
+        <p>紧急联系：<strong>+34 612 345 678</strong>（24小时）</p>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 GoWithMe 地陪平台 | 官方认证 | 专业责任险保障</p>
+    <p style="margin-top: 1rem;">TripAdvisor卓越证书 | 西班牙旅游局合作伙伴</p>
+  </footer>
+</body>
+</html>
